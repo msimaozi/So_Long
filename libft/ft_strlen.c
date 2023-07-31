@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: msimaozi <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 12:12:59 by msimaozi          #+#    #+#             */
-/*   Updated: 2022/11/03 12:13:01 by msimaozi         ###   ########.fr       */
+/*   Updated: 2023/07/06 09:48:33 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@ size_t	ft_strlen(char const *str)
 	size_t	x;
 
 	x = 0;
+	if (!str)
+		return (0);
 	while (str[x] != '\0')
-	{
 		x++;
-	}
 	return (x);
 }
 
